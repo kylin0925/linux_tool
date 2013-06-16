@@ -19,10 +19,10 @@ def sel():
 
 root = Tk()
 var = DoubleVar()
-scale = Scale( root, variable = var ,orient=HORIZONTAL)
+scale = Scale( root, variable = var ,orient=HORIZONTAL,length=300,from_=1,to=10)
 scale.pack(anchor=CENTER)
 
-button = Button(root, text="Get Scale Value", command=sel)
+button = Button(root, text="Set brightness", command=sel)
 button.pack(anchor=CENTER)
 
 label = Label(root)
